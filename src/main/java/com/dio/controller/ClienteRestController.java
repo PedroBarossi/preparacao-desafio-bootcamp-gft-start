@@ -2,6 +2,7 @@ package com.dio.controller;
 
 import com.dio.model.Cliente;
 import com.dio.service.ClienteService;
+import com.dio.service.impl.ClienteServicImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -11,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 public class ClienteRestController {
 
     @Autowired
-    private ClienteService clienteService;
+    private ClienteServicImpl clienteService;
 
     @GetMapping
     public ResponseEntity<Iterable<Cliente>> buscarTodos() {
