@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 public class ClienteRestController {
 
     @Autowired
-    private ClienteServicImpl clienteService;
+    private ClienteService clienteService;
 
     @GetMapping
     public ResponseEntity<Iterable<Cliente>> buscarTodos() {

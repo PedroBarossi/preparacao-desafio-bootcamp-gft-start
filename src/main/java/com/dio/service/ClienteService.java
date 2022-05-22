@@ -1,9 +1,7 @@
 package com.dio.service;
 
 import com.dio.model.Cliente;
-import org.springframework.stereotype.Service;
 
-@Service
 public interface ClienteService {
 
     Iterable<Cliente> buscarTodos();
